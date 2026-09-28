@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link rel="stylesheet" href="style1.css">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Employee Registration</title>
@@ -19,17 +20,19 @@
   </nav>
 
   <main>
-    <p>
+     
+    <h2 class="h3">
       Employee Registration
-    </p>
+    </h2>
+   <p class="p">Fill in the form below to register a new employee</p>
     
     <form action="">
     
         <label for="text">Full Name:</label>
-        <input type="text" id="name"required placeholder="enter your name"><br><br>
+        <input type="text" id="name"required placeholder="enter your name">
       
         <label for="email">Email:</label>
-        <input type="email" id="email" placeholder="enter your email" required><br>
+        <input type="email" id="email" placeholder="enter your email" required>
 
         <label for="department">Department:</label>
         <select id="department" name="department">
@@ -38,31 +41,31 @@
           <option value="HR">HR</option>
           <option value="finance">Finance</option>
           <option value="marketing">Marketing</option>
-        </select><br><br>
+        </select>
 
-        Gender:<br>
+       <h3>Gender:</h3>
         <input type="radio" id="male" name="gender" value="male">
-        <label for="male">Male</label><br>
+        <label for="male">Male</label>
 
         <input type="radio" id="Female" name="gender" value="female">
-        <label for="female">Female</label><br>
+        <label for="female">Female</label>
         
         <input type="radio" for="other">
         <label for="other"  id="Other" name="gender" value="other">Other</label><br><br>
 
-        Skill:<br>
+      <h3>Skills:</h3>
         <input type="checkbox" id="html" name="skills" value="html">
-        <label for="html">HTML</label><br>
+        <label for="html">HTML</label>
         <input type="checkbox" id="css" name="skills" value="css">
-        <label for="css">CSS</label><br>
+        <label for="css">CSS</label>
         <input type="checkbox" id="javascript" name="skills" value="javascript">
-        <label for="javascript">javascript<br><br>
-
+        <label for="javascript">javascript</label><br><br>
+      
           <label for="profile">Profile:</label>
           <input type="file" id="profile" name="profile" value="profile"><br><br>
           
-        <label for="bio">Bio:</label><br>
-        <textarea id="bio" name="bio"></textarea><br><br>
+        <label for="bio">Bio:</label>
+        <textarea id="bio" name="bio"></textarea>
 
         <button type="submit">Submit</button>
         <button type="reset">Reset</button> 
@@ -86,5 +89,8 @@
       </tr>
     </table>
   </main>
+  <footer>
+    <p>&copy; 2026 Employee Registration</p>
+  </footer>
 </body>
 </html> 
