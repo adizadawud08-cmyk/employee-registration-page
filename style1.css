@@ -20,9 +20,13 @@ nav{
   left: 890px;
   bottom: 80px;
 }
- .h3{
+ .h2{
   position: relative;
   bottom: 40px;
+ }
+ h3{
+  position: relative;
+  bottom: 10px;
  }
  .p{
   position: relative;
@@ -35,15 +39,27 @@ main{
 }
 form{
   background-color: white;
+  border-top: 5px solid #0d2f4f;
   padding: 25px;
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0, 0, 0,0.1);
   
 }
-form label{
-  display: block;
-  margin-bottom: 6px;
-  font-weight: bold;
+form .rid{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.rid label{
+ position: relative;
+ bottom: 10px;
+ right: 15px;
+}
+.rid label:hover{
+  border: 2px solid #0d2f4f;
+  height: 20px;
 }
  form input,form select,form textarea{
   width: 100%;
@@ -70,19 +86,13 @@ form label{
  }
   input[type="radio"],
  input[type="checkbox"]{
-  width: auto;
-  margin-right: 8px;
+  width: 20px;
   
  }
- form label[for="male"],
- form label[for="female"],
- form label[for="other"],
- form label[for="html"],
- form label[for="css"],
- form label[for="javascript"]{
-  position: relative;
-  left: 30px;
-  bottom: 30px;
+ 
+ .rid{
+  display: grid;
+  grid-auto-flow: column;
  }
  table{
   width: 100%;
@@ -113,6 +123,7 @@ form label{
  nav a:hover{
   color: #0d2f4f;
  }
+
  form input:focus,
  form input:focus,
  form input:focus{
